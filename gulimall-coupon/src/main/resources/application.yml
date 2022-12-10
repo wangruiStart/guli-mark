@@ -4,7 +4,13 @@ spring:
     password: su_n3@jFdj
     url: jdbc:mysql://47.97.193.243:7754/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.97.193.243:8848
+        service: coupon
+  application:
+    name: coupon
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
@@ -12,4 +18,6 @@ mybatis-plus:
     db-config:
       id-type: auto
 server:
-  port: 7000
+  port: 7001
+
+
