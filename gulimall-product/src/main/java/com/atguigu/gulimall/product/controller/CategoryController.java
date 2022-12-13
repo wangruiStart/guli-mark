@@ -45,7 +45,7 @@ public class CategoryController {
 
 
     /**
-     * 信息
+     * 根据ID获取单个菜单信息
      */
     @RequestMapping("/info/{catId}")
     @RequiresPermissions("product:category:info")
