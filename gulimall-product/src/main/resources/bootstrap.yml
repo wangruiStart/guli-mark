@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: product
+
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 47.97.193.243:8848
+        namespace: product
