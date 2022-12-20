@@ -20,7 +20,7 @@ public class GulimallCorsConfiguration {
         // 1. 配置跨域
         configuration.addAllowedHeader("*");
         configuration.addAllowedMethod("*");
-        configuration.addAllowedOrigin("*");
+        configuration.addAllowedOriginPattern("*");
         configuration.setAllowCredentials(true);
         source.registerCorsConfiguration("/**", configuration);
         return new CorsWebFilter(source);
